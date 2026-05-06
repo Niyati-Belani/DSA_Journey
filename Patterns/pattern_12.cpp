@@ -20,19 +20,19 @@ int main()
 
 //METHOD-2
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main()
-{
-    for (int row = 5; row >= 1 ; row--)
-    {
-        for (int col = 1; col <= row; col++)
-        {
-            cout<<"* ";
-        }
+// int main()
+// {
+//     for (int row = 5; row >= 1 ; row--)
+//     {
+//         for (int col = 1; col <= row; col++)
+//         {
+//             cout<<"* ";
+//         }
         
-        cout<<endl;
-    }
+//         cout<<endl;
+//     }
     
-}
+// }
