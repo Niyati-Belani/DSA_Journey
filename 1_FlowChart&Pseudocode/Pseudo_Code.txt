@@ -1,0 +1,19 @@
+/*
+    Pseudo Code:-
+    - General Logic of a Solution.
+
+    Example:- Add Two Numbers
+        Start
+        1. Input a & b
+        2. Sum = A + b
+        3. Print Sum
+        Exit
+    -> So these are our steps.
+    -> Now in pseudo code we are only write logical steps , we can ignor start.
+    
+    Pseudo Code for adding two numbers:-
+    1. Input a & b
+    2. sum = a + b
+    3. Print sum
+    4. Exit
+*/

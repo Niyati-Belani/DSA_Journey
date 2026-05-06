@@ -1,0 +1,20 @@
+/*
+    FlowChart
+    -Diagram of a Solution
+
+    Example:- Add Two Numbers
+        Start
+        1. Input a & b
+        2. Sum = A + b
+        3. Print Sum
+        Exit
+    -> Now we have to create a Diagram using these steps.
+    -> to create Diagram we use Components.
+    -> List of Components:-
+        Oval          :- Start/Exit
+        Parallalogram :- Input/Output
+        Reactangle    :- Process
+        Arrows        :- Flow
+        Diamond       :- Decision
+    -> Using these components we can create Flow Diagram/Chart.
+*/
