@@ -32,6 +32,16 @@ int main()
     } else {
         cout << "Odd Number." << endl;
     }
+/*-------------------------------------------------------------------------*/
+    char ch;
 
+    cout << "Enter Character: " << endl;
+    cin >> ch;
+
+    if (ch >= 'a' && ch <= 'z') {
+        cout << "Character is Lowercase." << endl;
+    } else {
+        cout << "Character is Uppercase." << endl;
+    }
     return 0;
 }
