@@ -19,6 +19,7 @@ int main()
 {
     int binNum = 110010;
 
+    cout << "Binary Number : " << binNum << endl;
     cout << "Binary to Decimal: " << bintoDec(binNum);
     return 0;
 }
