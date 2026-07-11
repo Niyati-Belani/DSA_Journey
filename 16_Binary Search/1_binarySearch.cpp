@@ -7,7 +7,7 @@ int binarySearch(vector<int> arr, int target)
     int st=0, end=arr.size()-1;
     while(st <= end)
     {
-        int mid = st + (end-st)/2; // This is an optimized way to calculate mid to avoid potential overflow when st and end are large integers.
+        int mid = (st + end)/2;
         if (arr[mid] > target)
         {
             end = mid - 1;
