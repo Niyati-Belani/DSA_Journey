@@ -28,8 +28,9 @@ int binarySearch(vector<int> arr, int target)
 int main()
 {
     vector<int> arr1 = {-1,0,3,4,5,9,12};
-    int target1 = 9;
+    int target1 = -1;
     cout << binarySearch (arr1,target1) << endl;
+    cout << "--------------------" << endl;
     vector<int> arr2 = {2,5,9,11,16,20};
     int target2 = 20;
     cout << binarySearch (arr2,target2) << endl;
