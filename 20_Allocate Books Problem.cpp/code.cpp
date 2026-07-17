@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-bool isValid(vector<int>& arr,int n, int m, int maxAllowedPages)
+bool isValid(vector<int>& arr,int n, int m, int maxAllowedPages) // O(n)
 {
     int stds = 1;
     int pages= 0;
@@ -27,7 +27,7 @@ bool isValid(vector<int>& arr,int n, int m, int maxAllowedPages)
     return stds > m ? false : true;
 }
 
-int allocateBook(vector<int>& arr,int n, int m)
+int allocateBook(vector<int>& arr,int n, int m)  // O(logN * n)
 {
     if (m > n)
     {
@@ -35,23 +35,24 @@ int allocateBook(vector<int>& arr,int n, int m)
     }
 
     int sum = 0;
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < n; i++) // O(n)
     {
         sum += arr[i];
     }
 
-    int st = 0, end = sum, ans = -1;
+    int ans = -1;
+    int st = 0, end = sum; // range of possible ans
 
-    while (st <= end)
+    while (st <= end) // O(logN * n)
     {
         int mid = st + (end - st)/2;
 
-        if (isValid(arr,n,m,mid))
+        if (isValid(arr,n,m,mid)) // left
         {
             ans = mid;
             end = mid - 1;
         }
-        else 
+        else  // right
         {
             st = mid + 1;
         }
@@ -61,9 +62,9 @@ int allocateBook(vector<int>& arr,int n, int m)
 
 int main()
 {
-    vector<int> arr = {2,1,3,4};
+    vector<int> arr = {2,1,3,4}; // 6
     int n = 4;
     int m = 2;
 
-    cout << allocateBook(arr,n,m);
+    cout << allocateBook(arr,n,m) << endl;
 }
