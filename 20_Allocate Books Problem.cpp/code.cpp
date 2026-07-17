@@ -58,6 +58,7 @@ int allocateBook(vector<int>& arr,int n, int m)
     }
     return ans;
 }
+
 int main()
 {
     vector<int> arr = {2,1,3,4};
