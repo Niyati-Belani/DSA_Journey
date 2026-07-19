@@ -3,7 +3,7 @@
 #include <climits>
 using namespace std;
 
-bool isPossible(vector<int>& arr,int N , int M, int maxAllocatedTime) // O(n)
+bool isPossible(vector<int>& arr,int N , int M, int maxAllocatedTime) // O(n) 
 {
     int painters = 1, time = 0;
     for(int i = 0; i < N ; i++)
@@ -21,7 +21,7 @@ bool isPossible(vector<int>& arr,int N , int M, int maxAllocatedTime) // O(n)
     return (painters <= M);
 }
 
-int partitionproblem(vector<int>& arr,int N,int M) // O(log(sum) * n)
+int partitionproblem(vector<int>& arr,int N,int M) // O(log(sum) * n) 
 {
     int sum = 0, maxVal = INT_MIN;
     for(int i = 0; i < N; i++)
